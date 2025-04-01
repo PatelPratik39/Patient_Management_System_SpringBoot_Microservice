@@ -1,0 +1,10 @@
+### Update request to example server
+PUT http://localhost:4000/api/patients/77e9abf1-0610-410e-8ba5-6f31f29b7c05
+Content-Type: application/json
+
+{
+  "name": "Chuchu Singh",
+  "email": "",
+  "address": "333 backward street",
+  "dateOfBirth": "1994-01-20"
+}
