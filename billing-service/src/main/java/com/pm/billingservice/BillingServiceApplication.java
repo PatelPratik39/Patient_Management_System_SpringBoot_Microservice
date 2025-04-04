@@ -9,11 +9,11 @@ public class BillingServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(BillingServiceApplication.class, args);
-        System.out.println("Billing Service Application Started Successfully.. ✅✅✅"  );
+        System.err.println("Billing Service Application Started Successfully.. ✅✅✅"  );
     }
     @PostConstruct
     public void init() {
-        System.out.println("🔥 Billing Service has started successfully");
+        System.err.println("🔥 Billing Service has started successfully");
     }
 
 
