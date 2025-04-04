@@ -18,19 +18,24 @@ public class BillingServiceGrpcClient {
     //aws.grpc123442/BillingService/CreatePatientAccount
     public BillingServiceGrpcClient(
             @Value("${billing.service.address:localhost}") String serverAddress,
-            @Value("${billing.service.grpc.port.9001}") int servicePort) {
-        log.info("Connecting to Billing Service GRPC service at port {} : {}", serverAddress,servicePort);
+            @Value("${billing.service.grpc.port:9001}") int serverPort) {
+        log.info("Connecting to Billing Service GRPC service at port {} : {}", serverAddress,serverPort);
 
-        ManagedChannel channel = ManagedChannelBuilder.forAddress(serverAddress,servicePort).usePlaintext().build();
-        System.out.println("Connected to Billing Service GRPC service at port " + servicePort);
+        ManagedChannel channel = ManagedChannelBuilder.forAddress(serverAddress,serverPort).usePlaintext().build();
+        System.out.println("Connected to Billing Service GRPC service at port " + serverPort);
         blockingStub = BillingServiceGrpc.newBlockingStub(channel);
     }
 
     public BillingResponse createBillingAccount(String patientId, String name, String email) {
-        BillingRequest request = BillingRequest.newBuilder().setPatientId(patientId).setName(name).setEmail(email).build();
-        log.info("Creating billing account {}", request);
-        BillingResponse response = blockingStub.createBillingAccount(request);
+        BillingRequest request = BillingRequest.newBuilder()
+                .setPatientId(patientId)
+                .setName(name)
+                .setEmail(email)
+                .build();
+
+        BillingResponse response = blockingStub.createBillingAccount(request); // 👈 this line should trigger server method
         log.info("Received response from billing service via GRPC : {}", response);
         return response;
     }
+
 }
