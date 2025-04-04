@@ -3,9 +3,9 @@ POST http://localhost:4000/api/patients
 Content-Type: application/json
 
 {
-  "name": "Chucha Singh",
-  "email": "chucha@email.com",
-  "address": "999 backward street",
+  "name": "Shree Sai",
+  "email": "sreesai@email.com",
+  "address": "123 backward street",
   "dateOfBirth": "1994-01-20",
   "registeredDate": "2024-10-13"
 }
