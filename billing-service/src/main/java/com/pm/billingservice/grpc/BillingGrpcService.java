@@ -14,15 +14,17 @@ public class BillingGrpcService extends BillingServiceImplBase {
     private static final Logger log = LoggerFactory.getLogger(BillingGrpcService.class);
 
     @Override
-    public void createBillingAccout(BillingRequest billingRequest, StreamObserver<BillingResponse> responseObserver){
+    public void createBillingAccount(BillingRequest billingRequest, StreamObserver<BillingResponse> responseObserver){
         log.info("Create billing account request received {} ", billingRequest.toString());
 
-//        billing service logic - e.g save to database, perform calculates etc
+        // billing service logic - e.g., save to database, perform calculations etc
         BillingResponse response = BillingResponse.newBuilder()
                 .setAccountId("12345")
                 .setStatus("ACTIVE")
                 .build();
+
         responseObserver.onNext(response);
         responseObserver.onCompleted();
     }
+
 }

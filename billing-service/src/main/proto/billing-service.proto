@@ -5,7 +5,7 @@ option java_package= "billing";
 //option java_package = "com.pm.billingservice.grpc";
 
 service BillingService {
-  rpc CreateBillingAccount(BillingRequest) returns(BillingResponse);
+  rpc createBillingAccount(BillingRequest) returns(BillingResponse);
 }
 
 message BillingRequest{
