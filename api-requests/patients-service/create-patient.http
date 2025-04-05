@@ -3,9 +3,9 @@ POST http://localhost:4000/api/patients
 Content-Type: application/json
 
 {
-  "name": "Anjali Kafki",
-  "email": "anjali1@email.com",
-  "address": "1234 kafki street",
-  "dateOfBirth": "1996-03-25",
-  "registeredDate": "2022-06-17"
+  "name": "Mehbooba Muftilal",
+  "email": "mehbooba@email.com",
+  "address": "222 Mufti chali",
+  "dateOfBirth": "1955-03-22",
+  "registeredDate": "2020-05-01"
 }
