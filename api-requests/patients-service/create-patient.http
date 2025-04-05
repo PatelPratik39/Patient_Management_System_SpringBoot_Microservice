@@ -3,9 +3,9 @@ POST http://localhost:4000/api/patients
 Content-Type: application/json
 
 {
-  "name": "Mangoo Billing",
-  "email": "mangoo2@email.com",
-  "address": "123 maganlal street",
-  "dateOfBirth": "1995-04-21",
-  "registeredDate": "2023-09-15"
+  "name": "Anjali Kafki",
+  "email": "anjali1@email.com",
+  "address": "1234 kafki street",
+  "dateOfBirth": "1996-03-25",
+  "registeredDate": "2022-06-17"
 }
