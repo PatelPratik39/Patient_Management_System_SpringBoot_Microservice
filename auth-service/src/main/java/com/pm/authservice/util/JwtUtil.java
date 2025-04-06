@@ -27,7 +27,7 @@ public class JwtUtil {
                 .decode(secret.getBytes(StandardCharsets.UTF_8));
         this.secretKey = Keys.hmacShaKeyFor(keyBytes);
     }
-
+//  Generate generate Token
     public String generateToken(String email, String role){
         return Jwts.builder()
                 .subject(email)
@@ -38,6 +38,7 @@ public class JwtUtil {
                 .compact();
     }
 
+//    Validate Token Logic
     public void validateToken(String token) {
         try {
             Jwts.parser().verifyWith((SecretKey) secretKey)
