@@ -1,8 +1,6 @@
-# Patient_Management_System
-
 # Patient Management Microservices System
 
-This repository showcases a microservices-based architecture for a **Patient Management System** using Spring Boot, Kafka, gRPC, and Docker.
+This repository showcases a microservices-based architecture for a **Patient Management System** using Java21, Spring Boot, Kafka, gRPC, and Docker.
 
 ## 🧠 Overview
 
