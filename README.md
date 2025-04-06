@@ -30,7 +30,7 @@ The system is composed of the following microservices:
 
 ## 🗂️ Architecture Diagram
 
-![System Architecture](diagram1.png)
+![System Architecture](/diagram1.png)
 
 ---
 
