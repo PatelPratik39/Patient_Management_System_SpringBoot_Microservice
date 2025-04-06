@@ -30,7 +30,7 @@ The system is composed of the following microservices:
 
 ## 🗂️ Architecture Diagram
 
-![System Architecture](./diagram1.png)
+![System Architecture](diagram1.png)
 
 ---
 
@@ -38,10 +38,10 @@ The system is composed of the following microservices:
 
 ### From Frontend → API Gateway:
 
-| Endpoint                        | Method | Description                      |
-|---------------------------------|--------|----------------------------------|
-| `/api/patients`                | `GET`  | Fetch all patients               |
-| `/api/analytics`               | `GET`  | Fetch analytics data             |
+| Endpoint                        | Method | Description                       |
+|---------------------------------|--------|-----------------------------------|
+| `/api/patients`                | `GET`  | Fetch all patients                |
+| `/api/analytics`               | `GET`  | Fetch analytics data              |
 
 ---
 
