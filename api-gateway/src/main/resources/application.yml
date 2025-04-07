@@ -12,12 +12,14 @@ spring:
           filters:
             - StripPrefix=1
 
+        # Route for /api/patients/** to patient-service
         - id: patient-service-route
           uri: http://patient-service:4000
           predicates:
             - Path=/api/patients/**
           filters:
             - StripPrefix=0
+            - JwtValidation
 
         - id: api-docs-patient-route
           uri: http://patient-service:4000
