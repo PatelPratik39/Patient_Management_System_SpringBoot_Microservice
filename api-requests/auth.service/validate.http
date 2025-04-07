@@ -1,4 +1,9 @@
 ### GET request to validate Token
 
-GET http://localhost:4005/auth/validate
+# Client request without API gateway
+#GET http://localhost:4005/validate
+#Authorization: Bearer {{token}}
+
+# Client request through API gateway
+GET http://localhost:4004/auth/validate
 Authorization: Bearer {{token}}

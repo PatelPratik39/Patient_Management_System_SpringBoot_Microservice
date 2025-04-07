@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/auth")
+@RequestMapping("")
 public class AuthController {
 
     private final AuthService authService;
