@@ -104,7 +104,7 @@ public class LocalStack extends Stack {
 
         createApiGatewayService();
     }
-
+// Create own VPC
     private Vpc createVpc(){
         return Vpc.Builder
                 .create(this, "PatientManagementVPC")
@@ -112,7 +112,7 @@ public class LocalStack extends Stack {
                 .maxAzs(2)
                 .build();
     }
-
+//  Create own RDS Database
     private DatabaseInstance createDatabase(String id, String dbName){
         return DatabaseInstance.Builder
                 .create(this, id)
