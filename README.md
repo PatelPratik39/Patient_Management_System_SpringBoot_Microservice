@@ -29,6 +29,7 @@ The system is composed of the following microservices:
 ## 🗂️ Architecture Diagram
 
 ![System Architecture](/diagram.png)
+![Cloud Deployment](/cloudDeploy_diagram.png)
 
 ---
 
