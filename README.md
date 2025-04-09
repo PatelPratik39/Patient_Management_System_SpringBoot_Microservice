@@ -56,9 +56,3 @@ The system is composed of the following microservices:
 | Kafka Broker       | 9092  | Messaging queue                |
 
 ---
-
-## ▶️ Run Locally with Docker Compose
-
-```bash
-# Build all services
-docker-compose up --build
