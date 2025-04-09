@@ -30,19 +30,12 @@ The system is composed of the following microservices:
 
 ![System Architecture](/diagram.png)
 ![Cloud Deployment](/cloudDeploy_diagram.png)
+![Cloud Deployment](/cloudDeploymnet1.png)
+![Cloud Deployment](/successfullyDeployed.png)
+![Cloud Deployment](/test1.png)
+![Cloud Deployment](/test2.png)
 
----
-
-## 📦 API Endpoints
-
-### From Frontend → API Gateway:
-
-| Endpoint                        | Method | Description                       |
-|---------------------------------|--------|-----------------------------------|
-| `/api/patients`                | `GET`  | Fetch all patients                |
-| `/api/analytics`               | `GET`  | Fetch analytics data              |
-
----
+--
 
 ### Internal Service Communication
 
